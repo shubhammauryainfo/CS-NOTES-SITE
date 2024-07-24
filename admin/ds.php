@@ -58,7 +58,7 @@ error_reporting(0);
               
                 <li>
                     <a class="show-cat-btn" href="##">
-                        <span class="icon folder" aria-hidden="true"></span>View
+                        <span class="icon folder" aria-hidden="true"></span>View Notes
                         <span class="category__btn transparent-btn" title="Open list">
                             <span class="sr-only">Open list</span>
                             <span class="icon arrow-down" aria-hidden="true"></span>
@@ -89,8 +89,37 @@ error_reporting(0);
                     </ul>
                 </li>
                 <li>
-                <a class="" href="prac.php"><span class="icon message" aria-hidden="true"></span>Practicals</a>
-              </li>
+                    <a class="show-cat-btn" href="##">
+                        <span class="icon folder" aria-hidden="true"></span>View Practical
+                        <span class="category__btn transparent-btn" title="Open list">
+                            <span class="sr-only">Open list</span>
+                            <span class="icon arrow-down" aria-hidden="true"></span>
+                        </span>
+                    </a>
+                    <ul class="cat-sub-menu">
+                    <li>
+                            <a href="ppos.php">P.O.S</a>
+                        </li>
+                        <li>
+                          <a href="pla.php">Linear Algebra</a>
+                      </li>
+                      <li>
+                          <a href="pds.php">Data Structures</a>
+                      </li>
+                      <li>
+                          <a href="padc.php">A.D.C</a>
+                      </li>
+                      <li>
+                          <a href="pjava.php">JAVA</a>
+                      </li>
+                      <li>
+                          <a href="pwt.php">WEB-Technologies</a>
+                      </li>
+                      <li>
+                          <a href="pgt.php">Green Technologies</a>
+                      </li>
+                    </ul>
+                </li>
                     </ul>
               
                   

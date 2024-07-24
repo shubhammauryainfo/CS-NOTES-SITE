@@ -5,11 +5,11 @@ session_start();
 $super=$_SESSION['super'];
  if($super==true) {
   $id = $_GET["id"];
-  $query = "SELECT * FROM `notes` WHERE`id` = $id";
+  $query = "SELECT * FROM `prac` WHERE`id` = $id";
   $result = mysqli_query($conn,$query);
   $rows = mysqli_fetch_array($result);
   unlink("../pdf/{$rows['pdf']}");
-  $sql = "DELETE FROM  `notes` WHERE`id` = $id";
+  $sql = "DELETE FROM  `prac` WHERE`id` = $id";
   mysqli_query($conn, $sql);
 
   if($conn){

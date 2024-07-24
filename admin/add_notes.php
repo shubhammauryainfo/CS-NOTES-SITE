@@ -16,6 +16,7 @@ include("connect.php");
 $topic = $_POST["topic"];
 $sub=$_POST["sub"];
 $date = $_POST["date"];
+$table = $_POST["table"];
 $name = $_POST["name"];
 $pdf = $_FILES['pdf']['name'];
 
@@ -24,7 +25,7 @@ $target_file = $target_dir.$pdf;
 move_uploaded_file($_FILES['pdf']['tmp_name'],"$target_file");
 
 
-$sql = "INSERT INTO `notes`(`topic`, `subject`, `date`, `person`, `pdf`) VALUES ('$topic','$sub','$date','$name','$pdf')";
+$sql = "INSERT INTO `$table`(`topic`, `subject`, `date`, `person`, `pdf`) VALUES ('$topic','$sub','$date','$name','$pdf')";
 
     if (mysqli_query($conn, $sql)) {
         header("location:dashboard.php");

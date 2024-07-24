@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Linear Algebra-NOTES</title>
+  <title>WT-Practical</title>
   <!-- Favicon -->
   <link rel="icon" href="./img/favicon.webp" type="image/x-icon">
   <!-- Custom styles -->
@@ -213,14 +213,12 @@ error_reporting(0);
     <!-- ! Main -->
     <main class="main users chart-page" id="skip-target">
       <div class="container">
-        <h2 class="main-title">Linear Algebra</h2>
-        <?php
+        <h2 class="main-title">Web-technology</h2>
+   <?php
+  include "connect.php";
 
 
-include "connect.php";
-
-
-$query = "SELECT * FROM `notes`WHERE `subject`='linear algebra' ORDER BY `id` DESC; " ;
+$query = "SELECT * FROM `prac`WHERE `subject`='web-technology' ORDER BY `id` DESC; " ;
 
 $result = mysqli_query($conn,$query);
 if(mysqli_num_rows($result)>0) {
@@ -228,8 +226,9 @@ if(mysqli_num_rows($result)>0) {
  <table class='styled-table'>
 <thead>
 <tr>
-<th>Topic</th>
- <th>Date</th>
+<th>Title</th>
+
+<th>Date</th>
 <th>uploaded By</th>
 <th>Download</th>
 <th>Delete</th>
@@ -244,8 +243,7 @@ echo "
 <td>{$rows['date']}</td>
 <td>{$rows['person']}</td>
 <td class='pt-3'> <a href='pdf/{$rows['pdf']}' target='_blank'><button type='button' class='btn btn-primary'>View</button></a></td>
-
-<td class='pt-3'> <a href='./del/del_notes.php?id={$rows['id']}'><button type='button' class='btn btn-primary'>Delete</button></a></td>
+<td class='pt-3'> <a href='./del/del_prac.php?id={$rows['id']}'><button type='button' class='btn btn-primary'>Delete</button></a></td>
 </tr>
 
 </tbody> ";
@@ -256,6 +254,7 @@ else{
 echo "no records found......"; 
 }
 ?>
+
 <style>
 
 .styled-table {

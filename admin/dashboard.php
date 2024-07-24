@@ -59,7 +59,7 @@
               
                 <li>
                     <a class="show-cat-btn" href="##">
-                        <span class="icon folder" aria-hidden="true"></span>View
+                        <span class="icon folder" aria-hidden="true"></span>View Notes
                         <span class="category__btn transparent-btn" title="Open list">
                             <span class="sr-only">Open list</span>
                             <span class="icon arrow-down" aria-hidden="true"></span>
@@ -90,8 +90,37 @@
                     </ul>
                 </li>
                 <li>
-                  <a class="" href="prac.php"><span class="icon message" aria-hidden="true"></span>Practicals</a>
-              </li>
+                    <a class="show-cat-btn" href="##">
+                        <span class="icon folder" aria-hidden="true"></span>View Practical
+                        <span class="category__btn transparent-btn" title="Open list">
+                            <span class="sr-only">Open list</span>
+                            <span class="icon arrow-down" aria-hidden="true"></span>
+                        </span>
+                    </a>
+                    <ul class="cat-sub-menu">
+                    <li>
+                            <a href="ppos.php">P.O.S</a>
+                        </li>
+                        <li>
+                          <a href="pla.php">Linear Algebra</a>
+                      </li>
+                      <li>
+                          <a href="pds.php">Data Structures</a>
+                      </li>
+                      <li>
+                          <a href="padc.php">A.D.C</a>
+                      </li>
+                      <li>
+                          <a href="pjava.php">JAVA</a>
+                      </li>
+                      <li>
+                          <a href="pwt.php">WEB-Technologies</a>
+                      </li>
+                      <li>
+                          <a href="pgt.php">Green Technologies</a>
+                      </li>
+                    </ul>
+                </li>
                     </ul>
               
                   
@@ -186,7 +215,7 @@
   
     <main class="main users chart-page" id="skip-target">
       <div class="container">
-        <h2 class="main-title">Add Notes</h2>
+        <h2 class="main-title">Add Notes | Practicals</h2>
        <div class="fluid-container">
 
         <form class="form-container" action="add_notes.php" method="post" enctype="multipart/form-data">
@@ -219,7 +248,15 @@
   <option value="Sonu">Sonu</option> 
 </select>
 <br>
+<div class="radio-buttons">
+              <input type="radio" id="notes" name="table" value="notes" checked>
+              <label for="notes">Notes</label>
   
+              <input type="radio" id="practical" name="table" value="prac">
+              <label for="practicl">Practical</label>
+  
+          
+          </div>
   
   <input type="file" id="file" name="pdf" accept="application/pdf"  aria-describedby="fileHelpId" required> 
           
