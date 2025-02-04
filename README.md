@@ -1,2 +1,2 @@
-# CS-NOTES-SITE
-http://abhinav-cs.42web.io/
+# CS-Abhinav-NOTES-SITE
+http://abhinav-cs.22web.org/
